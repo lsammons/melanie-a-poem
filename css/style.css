@@ -1,0 +1,100 @@
+/*============================
+     Base Element Styles
+============================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: .6em;
+}
+section {
+    display: flex;
+    justify-content: space-around;
+    padding: .5em;
+}
+
+div {
+    width: 7.5em;
+    height: 7.5em;
+    border-radius: 50%;
+    line-height: 1.2em;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.noBorder {
+    border-style: none;
+}
+
+.reverse {
+    -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+  -o-transform:rotateY(180deg);
+  -ms-transform:rotateY(180deg);
+  unicode-bidi:bidi-override;
+  direction:ltr;
+}
+
+.row7 div:first-of-type {
+    color: red;
+}
+
+.squareLayout {
+    display: flex;
+    letter-spacing: 2em;
+    justify-content: space-between;
+    background-color: black;
+}
+
+
+
+
+/*==============================
+    Media Queries
+===============================*/
+
+@media (min-width: 540px) {
+    body {
+        font-size: .7em;
+    }
+    div {
+        width: 8em;
+        height: 8em;
+    }
+}
+
+@media (min-width: 589px) {
+    body {
+        font-size: .8em;
+    }
+    div {
+        width: 9em;
+        height: 9em;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: .9em;
+    }
+    div {
+        width: 9.5em;
+        height: 9.5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 1em;
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+    div {
+    	width: 10em;
+    	height: 10em;
+    }
+}
